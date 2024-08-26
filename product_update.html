@@ -1,0 +1,7 @@
+{% block content %}
+<h1>{{ product_req.title}}</h1>
+<p>{{ product_req.price }}</p>
+<p>{{ product_req.p_category}}</p>
+<a href= "{% url 'product_update' product_req.id %}" > Edit </a>
+<a href="{% url 'product_delete' product_req.id %}"> Delete </a>
+{% endblock %}

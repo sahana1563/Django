@@ -1,0 +1,6 @@
+<h1>{{product_req.title}}</h1>
+<p>Original Price: {{product_req.price}}</p>
+<p><b>Discounted Price:</b> {{product_req.discounted_price}}</p>
+<p>Category: {{product.p_category.category_name}}</p>
+<a href="{% url 'product_update' product_req.id %}">Edit</a>
+<a href="{% url 'product_delete' product_req.id %}">Delete</a>
